@@ -1,6 +1,6 @@
 import React from "react";
-import Board from "./board";
-import utils from "../utils/utils";
+import Board from "../board/board";
+import utils from "../../utils/utils";
 
 class Game extends React.Component {
 
