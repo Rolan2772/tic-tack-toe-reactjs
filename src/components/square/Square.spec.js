@@ -1,16 +1,23 @@
 import React from 'react';
-import {shallow} from 'enzyme';
+import {shallow, mount} from 'enzyme';
 import Square from './Square'
 
 describe('<Square />', () => {
 
+    it('should render value', () => {
+        const value = "X";
+        const wrapper = mount(<Square value={value} onclick={() => ""}/>);
+
+        const spans = wrapper.find('span');
+        expect(spans.length).toEqual(2);
+        expect(spans.at(0).text()).toEqual("X");
+    });
+
     it('should invoke function on click', () => {
         const onClick = jest.fn();
-        const square = shallow(<Square value="X" onclick={onClick}/>);
+        const wrapper = shallow(<Square value="X" onclick={onClick}/>);
 
-        expect(square.text()).toEqual('X');
-        square.simulate('click');
-        expect(square.text()).toEqual('X');
+        wrapper.simulate('click');
         expect(onClick).toHaveBeenCalled();
     });
 });

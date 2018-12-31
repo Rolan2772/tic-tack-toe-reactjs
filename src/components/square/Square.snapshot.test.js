@@ -22,6 +22,5 @@ describe('<Square />', () => {
         tree = component.toJSON();
         expect(tree).toMatchSnapshot();
     });
-
 });
 

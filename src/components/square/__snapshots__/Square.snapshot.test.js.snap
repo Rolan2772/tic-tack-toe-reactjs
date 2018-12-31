@@ -2,18 +2,60 @@
 
 exports[`<Square /> should match snapshot 1`] = `
 <button
-  className="square"
+  className="MuiButtonBase-root-27 MuiButton-root-1 MuiButton-outlined-9"
+  disabled={false}
+  onBlur={[Function]}
   onClick={[Function]}
+  onContextMenu={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex="0"
+  type="button"
 >
-  X
+  <span
+    className="MuiButton-label-2"
+  >
+    X
+  </span>
+  <span
+    className="MuiTouchRipple-root-30"
+  />
 </button>
 `;
 
 exports[`<Square /> should match snapshot after click 1`] = `
 <button
-  className="square"
+  className="MuiButtonBase-root-27 MuiButton-root-1 MuiButton-outlined-9"
+  disabled={false}
+  onBlur={[Function]}
   onClick={[Function]}
+  onContextMenu={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex="0"
+  type="button"
 >
-  X
+  <span
+    className="MuiButton-label-2"
+  >
+    X
+  </span>
+  <span
+    className="MuiTouchRipple-root-30"
+  />
 </button>
 `;
