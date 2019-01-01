@@ -1,33 +1,41 @@
 import React from "react";
 import Square from "../square/Square";
+import Grid from "@material-ui/core/Grid";
+import { withStyles } from '@material-ui/core/styles';
+
+const styles = () => ({
+    boardMargin: {
+        margin: '10px'
+    }
+});
 
 class Board extends React.Component {
 
-    renderSquare(i) {
-        return <Square value={this.props.squares[i]} onclick={() => this.props.onClick(i)}/>;
+    renderSquare(index) {
+        return <Square value={this.props.squares[index]} onclick={() => this.props.onClick(index)}/>;
     }
 
     render() {
         return (
-            <div>
-                <div className="board-row">
+            <Grid className={this.props.classes.boardMargin}>
+                <Grid container justify="center">
                     {this.renderSquare(0)}
                     {this.renderSquare(1)}
                     {this.renderSquare(2)}
-                </div>
-                <div className="board-row">
+                </Grid>
+                <Grid container justify="center">
                     {this.renderSquare(3)}
                     {this.renderSquare(4)}
                     {this.renderSquare(5)}
-                </div>
-                <div className="board-row">
+                </Grid>
+                <Grid container justify="center">
                     {this.renderSquare(6)}
                     {this.renderSquare(7)}
                     {this.renderSquare(8)}
-                </div>
-            </div>
+                </Grid>
+            </Grid>
         )
     }
 }
 
-export default Board;
+export default withStyles(styles)(Board);

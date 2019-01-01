@@ -1,6 +1,16 @@
 import React from "react";
 import Board from "../board/board";
 import utils from "../../utils/utils";
+import Button from '@material-ui/core/Button'
+import Typography from '@material-ui/core/Typography';
+import Grid from "@material-ui/core/Grid";
+import {withStyles} from '@material-ui/core/styles';
+
+const styles = () => ({
+    historyControl: {
+        margin: '2px'
+    }
+});
 
 class Game extends React.Component {
 
@@ -48,7 +58,7 @@ class Game extends React.Component {
         if (winner) {
             status = 'Winner: ' + winner;
         } else {
-            status = 'Next player: ' + (this.state.isX ? 'X' : 'O');
+            status = 'Player: ' + (this.state.isX ? 'X' : 'O');
         }
 
         const moves = history.map((step, move) => {
@@ -56,24 +66,29 @@ class Game extends React.Component {
                 'Go to move #' + move :
                 'Go to game start';
             return (
-                <li key={move}>
-                    <button onClick={() => this.jumpTo(move)}>{desc}</button>
-                </li>
+                <Button className={this.props.classes.historyControl}
+                        variant="contained"
+                        onClick={() => this.jumpTo(move)}>{desc}
+                </Button>
             );
         });
 
         return (
-            <div className="game">
-                <div className="game-board">
+            <Grid container direction="column">
+                <Grid container justify="center">
+                    <Typography variant="h6">{status}</Typography>
+                </Grid>
+                <Grid>
                     <Board squares={currentState.squares} onClick={(i) => this.handleClick(i)}/>
-                </div>
-                <div className="game-info">
-                    <div>{status}</div>
-                    <ol>{moves}</ol>
-                </div>
-            </div>
+                </Grid>
+                <Grid container justify="center">
+                    <Grid container xs={2} direction="column">
+                        {moves}
+                    </Grid>
+                </Grid>
+            </Grid>
         );
     }
 }
 
-export default Game;
+export default withStyles(styles)(Game);
