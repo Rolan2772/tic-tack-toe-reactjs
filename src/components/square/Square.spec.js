@@ -6,7 +6,7 @@ describe('<Square />', () => {
 
     it('should render value', () => {
         const value = "X";
-        const wrapper = mount(<Square value={value} onclick={() => ""}/>);
+        const wrapper = mount(<Square value={value} onClick={() => ""}/>);
 
         const spans = wrapper.find('span');
         expect(spans.length).toEqual(2);
@@ -15,7 +15,7 @@ describe('<Square />', () => {
 
     it('should invoke function on click', () => {
         const onClick = jest.fn();
-        const wrapper = shallow(<Square value="X" onclick={onClick}/>);
+        const wrapper = shallow(<Square value="X" onClick={onClick}/>);
 
         wrapper.simulate('click');
         expect(onClick).toHaveBeenCalled();

@@ -6,7 +6,7 @@ describe('<Square />', () => {
 
     it('should match snapshot', () => {
         const component = renderer.create(
-            <Square value="X" onclick={() => ''}/>
+            <Square value="X" onClick={() => ''}/>
         );
         let tree = component.toJSON();
         expect(tree).toMatchSnapshot();
@@ -14,7 +14,7 @@ describe('<Square />', () => {
 
     it('should match snapshot after click', () => {
         const component = renderer.create(
-            <Square value="X" onclick={() => ''}/>
+            <Square value="X" onClick={() => ''}/>
         );
 
         let tree = component.toJSON();

@@ -1,5 +1,5 @@
 import React from "react";
-import Board from "../board/board";
+import Board from "../board/Board";
 import utils from "../../utils/utils";
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography';
@@ -81,9 +81,15 @@ class Game extends React.Component {
                 <Grid>
                     <Board squares={currentState.squares} onClick={(i) => this.handleClick(i)}/>
                 </Grid>
-                <Grid container justify="center">
-                    <Grid container xs={2} direction="column">
-                        {moves}
+                <Grid container>
+                    <Grid item xs={5}>
+                    </Grid>
+                    <Grid item xs={2}>
+                        <Grid container direction={"column"}>
+                            {moves}
+                        </Grid>
+                    </Grid>
+                    <Grid item xs={5}>
                     </Grid>
                 </Grid>
             </Grid>
