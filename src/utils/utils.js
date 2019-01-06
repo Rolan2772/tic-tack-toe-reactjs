@@ -19,5 +19,5 @@ function findWinner(squares) {
 }
 
 export default {
-    findWinner: findWinner
+    findWinner
 };

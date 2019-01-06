@@ -1,6 +1,6 @@
-import React from 'react'
-import {render} from 'enzyme'
-import Board from './Board'
+import React from 'react';
+import {render} from 'enzyme';
+import Board from './Board';
 
 describe('<Board />', () => {
 

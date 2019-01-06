@@ -1,6 +1,6 @@
-import React from 'react'
-import {shallow, mount} from 'enzyme'
-import Square from './Square'
+import React from 'react';
+import {shallow, mount} from 'enzyme';
+import Square from './Square';
 
 describe('<Square />', () => {
 

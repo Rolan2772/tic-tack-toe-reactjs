@@ -1,6 +1,6 @@
-import React from 'react'
-import Board from './Board'
-import renderer from 'react-test-renderer'
+import React from 'react';
+import Board from './Board';
+import renderer from 'react-test-renderer';
 
 describe('<Board />', () => {
 

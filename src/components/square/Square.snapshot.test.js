@@ -1,6 +1,6 @@
-import React from 'react'
-import Square from './Square'
-import renderer from 'react-test-renderer'
+import React from 'react';
+import Square from './Square';
+import renderer from 'react-test-renderer';
 
 describe('<Square />', () => {
 

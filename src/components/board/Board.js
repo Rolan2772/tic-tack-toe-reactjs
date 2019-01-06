@@ -9,14 +9,15 @@ const styles = () => ({
     }
 });
 
-const DynamicRow = props => {
+const DynamicRow = (props) => {
     const {rowIndex, rowData, onClick} = props;
     const size = rowData.length;
     let cells = [];
 
     for (let index = 0; index < size; index++) {
         const cellIndex = rowIndex * size + index;
-        cells.push(<Square value={rowData[index]} onClick={() => onClick(cellIndex)}/>);
+        const value = rowData[index];
+        cells.push(<Square value={value} onClick={() => onClick(cellIndex)}/>);
     }
     return (
         <Grid container justify="center">
@@ -25,7 +26,7 @@ const DynamicRow = props => {
     )
 };
 
-const DynamicBoard = props => {
+const DynamicBoard = (props) => {
     const {boardData, onClick} = props;
     const board = [];
     const boardSize = Math.sqrt(boardData.length);
@@ -39,7 +40,7 @@ const DynamicBoard = props => {
     return board;
 };
 
-const Board = props => {
+const Board = (props) => {
     const {squares, onClick} = props;
 
     return (
