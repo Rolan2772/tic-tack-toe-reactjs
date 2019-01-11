@@ -68,7 +68,8 @@ class Game extends React.Component {
             return (
                 <Button className={this.props.classes.historyControl}
                         variant="contained"
-                        onClick={() => this.jumpTo(move)}>{desc}
+                        onClick={() => this.jumpTo(move)}>
+                    {desc}
                 </Button>
             );
         });
