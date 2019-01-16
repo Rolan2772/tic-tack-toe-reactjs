@@ -1,0 +1,19 @@
+language: node_js
+
+node_js:
+  - "stable"
+
+cache:
+  directories:
+    - node_modules
+
+script:
+  - npm run build
+
+deploy:
+  provider: heroku
+  api-key:
+    secure: $HEROKU_API_KEY
+  app: rolan-tic-tac-toe
+  on:
+    branch: master

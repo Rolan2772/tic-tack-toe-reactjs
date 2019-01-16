@@ -2,6 +2,10 @@
   "name": "tic-tac-toe",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "5.7.1",
+    "node": "9.5.0"
+  },
   "dependencies": {
     "@material-ui/core": "^3.7.1",
     "@material-ui/styles": "^3.0.0-alpha.6",
@@ -13,6 +17,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:coverage:ci": "react-scripts test --coverage --maxWorkers 2",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
