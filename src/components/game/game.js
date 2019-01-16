@@ -83,14 +83,14 @@ class Game extends React.Component {
                     <Board squares={currentState.squares} onClick={(i) => this.handleClick(i)}/>
                 </Grid>
                 <Grid container>
-                    <Grid item xs={5}>
+                    <Grid item xs={3} md={4} lg={5}>
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={6} md={4} lg={2}>
                         <Grid container direction={"column"}>
                             {moves}
                         </Grid>
                     </Grid>
-                    <Grid item xs={5}>
+                    <Grid item xs={3} md={4} lg={5}>
                     </Grid>
                 </Grid>
             </Grid>
