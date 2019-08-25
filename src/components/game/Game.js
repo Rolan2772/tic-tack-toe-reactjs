@@ -12,7 +12,7 @@ const styles = () => ({
     }
 });
 
-class Game extends React.Component {
+export class Game extends React.Component {
 
     constructor(props) {
         super(props);
@@ -58,7 +58,7 @@ class Game extends React.Component {
         if (winner) {
             status = 'Winner: ' + winner;
         } else {
-            status = 'Player: ' + (this.state.isX ? 'X' : 'O');
+            status = 'Next move: ' + (this.state.isX ? 'X' : 'O');
         }
 
         const moves = history.map((step, move) => {
@@ -66,9 +66,11 @@ class Game extends React.Component {
                 'Go to move #' + move :
                 'Go to game start';
             return (
-                <Button className={this.props.classes.historyControl}
-                        variant="contained"
-                        onClick={() => this.jumpTo(move)}>
+                <Button
+                    key={move}
+                    className={this.props.classes.historyControl}
+                    variant="contained"
+                    onClick={() => this.jumpTo(move)}>
                     {desc}
                 </Button>
             );

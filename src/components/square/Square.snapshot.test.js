@@ -4,15 +4,17 @@ import renderer from 'react-test-renderer';
 
 describe('<Square />', () => {
 
-    it('should match snapshot', () => {
+    test('should match snapshot', () => {
         const component = renderer.create(
             <Square value="X" onClick={() => ''}/>
         );
+
         let tree = component.toJSON();
+
         expect(tree).toMatchSnapshot();
     });
 
-    it('should match snapshot after click', () => {
+    test('should match snapshot after click', () => {
         const component = renderer.create(
             <Square value="X" onClick={() => ''}/>
         );
@@ -20,6 +22,7 @@ describe('<Square />', () => {
         let tree = component.toJSON();
         tree.props.onClick();
         tree = component.toJSON();
+
         expect(tree).toMatchSnapshot();
     });
 });

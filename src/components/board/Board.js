@@ -9,7 +9,7 @@ const styles = () => ({
     }
 });
 
-const DynamicRow = (props) => {
+export const DynamicRow = (props) => {
     const {rowIndex, rowData, onClick} = props;
     const size = rowData.length;
     let cells = [];
@@ -26,7 +26,7 @@ const DynamicRow = (props) => {
     )
 };
 
-const DynamicBoard = (props) => {
+export const DynamicBoard = (props) => {
     const {boardData, onClick} = props;
     const board = [];
     const boardSize = Math.sqrt(boardData.length);
@@ -40,7 +40,7 @@ const DynamicBoard = (props) => {
     return board;
 };
 
-const Board = (props) => {
+export const Board = (props) => {
     const {squares, onClick} = props;
 
     return (
@@ -50,4 +50,4 @@ const Board = (props) => {
     )
 };
 
-export default withStyles(styles)(Board);
+export default Board;

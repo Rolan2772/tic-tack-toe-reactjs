@@ -1,14 +1,22 @@
 import React from 'react';
-import {render} from 'enzyme';
-import Board from './Board';
+import {shallow} from 'enzyme';
+import {Board, DynamicBoard} from './Board';
 
 describe('<Board />', () => {
 
-    it('should render board', () => {
+    const styles = {
+        boardMargin: {
+            margin: '10px'
+        }
+    };
+
+    test('should render board', () => {
         const size = 2;
         const squares = Array(size).fill(false);
-        const board = render(<Board squares={squares} onClick={() => ''}/>);
+        const board = shallow(<Board squares={squares} onClick={() => ''} classes={styles}/>);
 
-        expect(board.find('button').length).toEqual(size);
+        const dynamicBoard = board.find(DynamicBoard);
+        expect(dynamicBoard).toBeDefined();
+        expect(dynamicBoard.prop('boardData')).toEqual(squares);
     });
 });
