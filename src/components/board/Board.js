@@ -50,4 +50,4 @@ export const Board = (props) => {
     )
 };
 
-export default Board;
+export default withStyles(styles)(Board);

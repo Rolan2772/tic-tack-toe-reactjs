@@ -20,51 +20,41 @@ export class Game extends React.Component {
             history: [{
                 squares: Array(9).fill(null),
             }],
-            stepNumber: 0,
-            isX: true
+            step: 0,
+            isX: true,
+            winner: null
         }
     }
 
     jumpTo(step) {
         this.setState({
-            stepNumber: step,
+            step: step,
             isX: (step % 2) === 0,
         });
     }
 
     handleClick(i) {
         const history = this.state.history;
-        const current = history[this.state.stepNumber];
+        const current = history[this.state.step];
         const squares = current.squares.slice();
-        if (squares[i] || utils.findWinner(squares)) {
+        if (squares[i] || this.state.winner) {
             return;
         }
         squares[i] = this.state.isX ? 'X' : 'O';
+        history.push({squares: squares});
         this.setState({
-            history: history.concat([{
-                squares: squares,
-            }]),
-            stepNumber: history.length,
+            history: history,
+            step: history.length,
             isX: !this.state.isX,
+            winner: utils.findWinner(squares)
         });
     }
 
-    render() {
-        const history = this.state.history;
-        const currentState = history[this.state.stepNumber];
-        const winner = utils.findWinner(currentState.squares);
-
-        let status;
-        if (winner) {
-            status = 'Winner: ' + winner;
-        } else {
-            status = 'Next move: ' + (this.state.isX ? 'X' : 'O');
-        }
-
-        const moves = history.map((step, move) => {
-            const desc = move > 0 ?
-                'Go to move #' + move :
-                'Go to game start';
+    renderMoves = (moves) => {
+        return moves.map((step, move) => {
+            const desc = move > 0
+                ? `Go to move # ${move}`
+                : `Go to game start`;
             return (
                 <Button
                     key={move}
@@ -75,6 +65,15 @@ export class Game extends React.Component {
                 </Button>
             );
         });
+    };
+
+    render() {
+        const {history, step} = this.state;
+        const currentState = history[step];
+
+        const status = this.state.winner
+            ? `Winner: ${this.state.winner}`
+            : `Next move: ${this.state.isX ? 'X' : 'O'}`;
 
         return (
             <Grid container direction="column">
@@ -89,7 +88,7 @@ export class Game extends React.Component {
                     </Grid>
                     <Grid item xs={6} md={4} lg={2}>
                         <Grid container direction={"column"}>
-                            {moves}
+                            {this.renderMoves(history)}
                         </Grid>
                     </Grid>
                     <Grid item xs={3} md={4} lg={5}>

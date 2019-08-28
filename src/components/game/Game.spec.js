@@ -14,10 +14,11 @@ describe('<Game/>', () => {
     test('initial state', () => {
         const wrapper = shallow(<Game classes={styles}/>);
 
-        expect(wrapper.state().stepNumber).toEqual(0);
+        expect(wrapper.state().step).toEqual(0);
         expect(wrapper.state().history).toEqual([{
             squares: Array(9).fill(null),
         }]);
         expect(wrapper.state().isX).toBeTruthy();
+        expect(wrapper.state().winner).toBeFalsy();
     });
 });
