@@ -12,6 +12,46 @@ const styles = () => ({
     }
 });
 
+export const GameStatus = props => {
+    return (
+        <Typography variant="h6">{props.text}</Typography>
+    );
+};
+
+export const GameHistory = props => {
+
+    const renderMove = move => {
+        return (
+            <Button
+                key={move}
+                // className={props.classes.historyControl}
+                variant="contained"
+                onClick={() => this.jumpTo(move)}>
+                {move > 0 ? `Go to move # ${move}` : `Go to game start`}
+            </Button>
+        )
+    };
+
+    const renderMoves = (moves) => {
+        return moves.map((step, move) => renderMove(move));
+    };
+
+    return (
+        <React.Fragment>
+            <Grid item xs={3} md={4} lg={5}>
+            </Grid>
+            <Grid item xs={6} md={4} lg={2}>
+                <Grid container direction={"column"}>
+                    {renderMoves(props.history)}
+                </Grid>
+            </Grid>
+            <Grid item xs={3} md={4} lg={5}>
+            </Grid>
+        </React.Fragment>
+    );
+};
+
+
 export class Game extends React.Component {
 
     constructor(props) {
@@ -44,28 +84,11 @@ export class Game extends React.Component {
         history.push({squares: squares});
         this.setState({
             history: history,
-            step: history.length,
+            step: history.length - 1,
             isX: !this.state.isX,
             winner: utils.findWinner(squares)
         });
     }
-
-    renderMoves = (moves) => {
-        return moves.map((step, move) => {
-            const desc = move > 0
-                ? `Go to move # ${move}`
-                : `Go to game start`;
-            return (
-                <Button
-                    key={move}
-                    className={this.props.classes.historyControl}
-                    variant="contained"
-                    onClick={() => this.jumpTo(move)}>
-                    {desc}
-                </Button>
-            );
-        });
-    };
 
     render() {
         const {history, step} = this.state;
@@ -78,21 +101,13 @@ export class Game extends React.Component {
         return (
             <Grid container direction="column">
                 <Grid container justify="center">
-                    <Typography variant="h6">{status}</Typography>
+                    <GameStatus text={status}/>
                 </Grid>
                 <Grid>
                     <Board squares={currentState.squares} onClick={(i) => this.handleClick(i)}/>
                 </Grid>
                 <Grid container>
-                    <Grid item xs={3} md={4} lg={5}>
-                    </Grid>
-                    <Grid item xs={6} md={4} lg={2}>
-                        <Grid container direction={"column"}>
-                            {this.renderMoves(history)}
-                        </Grid>
-                    </Grid>
-                    <Grid item xs={3} md={4} lg={5}>
-                    </Grid>
+                    <GameHistory history={history}/>
                 </Grid>
             </Grid>
         );

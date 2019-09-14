@@ -1,14 +1,12 @@
 import React from 'react';
-import Board from './Board';
+import Game from './Game';
 import renderer from 'react-test-renderer';
 
-describe('<Board />', () => {
+describe('<Game />', () => {
 
     test('should match snapshot', () => {
-        const squares = [];
-        const component = renderer.create(
-            <Board squares={squares} onclick={() => ''}/>
-        );
+        const component = renderer.create(<Game/>);
+
         let tree = component.toJSON();
         expect(tree).toMatchSnapshot();
     });

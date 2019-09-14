@@ -4,7 +4,17 @@ import renderer from 'react-test-renderer';
 
 describe('<Square />', () => {
 
-    test('should match snapshot', () => {
+    test('should match snapshot with value', () => {
+        const component = renderer.create(
+            <Square value="X" onClick={() => ''}/>
+        );
+
+        let tree = component.toJSON();
+
+        expect(tree).toMatchSnapshot();
+    });
+
+    test('should match snapshot with empty value', () => {
         const component = renderer.create(
             <Square value="X" onClick={() => ''}/>
         );

@@ -11,8 +11,7 @@ describe('<Board />', () => {
     };
 
     test('should render board', () => {
-        const size = 2;
-        const squares = Array(size).fill(false);
+        const squares = Array(9).fill(false);
         const board = shallow(<Board squares={squares} onClick={() => ''} classes={styles}/>);
 
         const dynamicBoard = board.find(DynamicBoard);

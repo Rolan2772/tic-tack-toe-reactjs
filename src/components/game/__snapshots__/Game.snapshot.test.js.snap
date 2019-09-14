@@ -1,0 +1,325 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Game /> should match snapshot 1`] = `
+<div
+  className="MuiGrid-container-2 MuiGrid-direction-xs-column-5"
+>
+  <div
+    className="MuiGrid-container-2 MuiGrid-justify-xs-center-19"
+  >
+    <h6
+      className="MuiTypography-root-99 MuiTypography-h6-116"
+    >
+      Next move: X
+    </h6>
+  </div>
+  <div
+    className=""
+  >
+    <div
+      className="Board-boardMargin-135"
+    >
+      <div
+        className="MuiGrid-container-2 MuiGrid-justify-xs-center-19"
+      >
+        <button
+          className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label-138"
+          >
+            
+          </span>
+          <span
+            className="MuiTouchRipple-root-166"
+          />
+        </button>
+        <button
+          className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label-138"
+          >
+            
+          </span>
+          <span
+            className="MuiTouchRipple-root-166"
+          />
+        </button>
+        <button
+          className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label-138"
+          >
+            
+          </span>
+          <span
+            className="MuiTouchRipple-root-166"
+          />
+        </button>
+      </div>
+      <div
+        className="MuiGrid-container-2 MuiGrid-justify-xs-center-19"
+      >
+        <button
+          className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label-138"
+          >
+            
+          </span>
+          <span
+            className="MuiTouchRipple-root-166"
+          />
+        </button>
+        <button
+          className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label-138"
+          >
+            
+          </span>
+          <span
+            className="MuiTouchRipple-root-166"
+          />
+        </button>
+        <button
+          className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label-138"
+          >
+            
+          </span>
+          <span
+            className="MuiTouchRipple-root-166"
+          />
+        </button>
+      </div>
+      <div
+        className="MuiGrid-container-2 MuiGrid-justify-xs-center-19"
+      >
+        <button
+          className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label-138"
+          >
+            
+          </span>
+          <span
+            className="MuiTouchRipple-root-166"
+          />
+        </button>
+        <button
+          className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label-138"
+          >
+            
+          </span>
+          <span
+            className="MuiTouchRipple-root-166"
+          />
+        </button>
+        <button
+          className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label-138"
+          >
+            
+          </span>
+          <span
+            className="MuiTouchRipple-root-166"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-container-2"
+  >
+    <div
+      className="MuiGrid-item-3 MuiGrid-grid-xs-3-33 MuiGrid-grid-md-4-62 MuiGrid-grid-lg-5-77"
+    />
+    <div
+      className="MuiGrid-item-3 MuiGrid-grid-xs-6-36 MuiGrid-grid-md-4-62 MuiGrid-grid-lg-2-74"
+    >
+      <div
+        className="MuiGrid-container-2 MuiGrid-direction-xs-column-5"
+      >
+        <button
+          className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-contained-148 MuiButton-raised-151"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label-138"
+          >
+            Go to game start
+          </span>
+          <span
+            className="MuiTouchRipple-root-166"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-item-3 MuiGrid-grid-xs-3-33 MuiGrid-grid-md-4-62 MuiGrid-grid-lg-5-77"
+    />
+  </div>
+</div>
+`;
