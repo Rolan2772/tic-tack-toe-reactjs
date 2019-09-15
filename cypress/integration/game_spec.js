@@ -1,7 +1,7 @@
 describe('Tic tak toe game', () => {
 
     beforeEach(() => {
-        cy.visit('http://localhost:3000')
+        cy.visit('https://rolan-tic-tac-toe.herokuapp.com')
     });
 
     it('should have winner', () => {
