@@ -10,7 +10,7 @@ const styles = {
 
 export const Square = props => {
     return (
-        <Button variant="outlined" onClick={props.onClick} className={props.classes.cell}>
+        <Button variant="outlined" index={props.index} onClick={props.onClick} className={props.classes.cell}>
             {props.value || ''}
         </Button>
     )

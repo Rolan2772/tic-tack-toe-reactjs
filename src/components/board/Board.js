@@ -17,7 +17,7 @@ export const DynamicRow = (props) => {
     for (let index = 0; index < size; index++) {
         const cellIndex = rowIndex * size + index;
         const value = rowData[index];
-        cells.push(<Square key={cellIndex} value={value} onClick={() => onClick(cellIndex)}/>);
+        cells.push(<Square key={cellIndex} value={value} index={cellIndex} onClick={() => onClick(cellIndex)}/>);
     }
     return (
         <Grid container justify="center">

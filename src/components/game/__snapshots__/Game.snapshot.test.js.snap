@@ -25,6 +25,7 @@ exports[`<Game /> should match snapshot 1`] = `
         <button
           className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
           disabled={false}
+          index={0}
           onBlur={[Function]}
           onClick={[Function]}
           onContextMenu={[Function]}
@@ -52,6 +53,7 @@ exports[`<Game /> should match snapshot 1`] = `
         <button
           className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
           disabled={false}
+          index={1}
           onBlur={[Function]}
           onClick={[Function]}
           onContextMenu={[Function]}
@@ -79,91 +81,7 @@ exports[`<Game /> should match snapshot 1`] = `
         <button
           className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
           disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onContextMenu={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          <span
-            className="MuiButton-label-138"
-          >
-            
-          </span>
-          <span
-            className="MuiTouchRipple-root-166"
-          />
-        </button>
-      </div>
-      <div
-        className="MuiGrid-container-2 MuiGrid-justify-xs-center-19"
-      >
-        <button
-          className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onContextMenu={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          <span
-            className="MuiButton-label-138"
-          >
-            
-          </span>
-          <span
-            className="MuiTouchRipple-root-166"
-          />
-        </button>
-        <button
-          className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onContextMenu={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          <span
-            className="MuiButton-label-138"
-          >
-            
-          </span>
-          <span
-            className="MuiTouchRipple-root-166"
-          />
-        </button>
-        <button
-          className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
-          disabled={false}
+          index={2}
           onBlur={[Function]}
           onClick={[Function]}
           onContextMenu={[Function]}
@@ -195,6 +113,7 @@ exports[`<Game /> should match snapshot 1`] = `
         <button
           className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
           disabled={false}
+          index={3}
           onBlur={[Function]}
           onClick={[Function]}
           onContextMenu={[Function]}
@@ -222,6 +141,7 @@ exports[`<Game /> should match snapshot 1`] = `
         <button
           className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
           disabled={false}
+          index={4}
           onBlur={[Function]}
           onClick={[Function]}
           onContextMenu={[Function]}
@@ -249,6 +169,95 @@ exports[`<Game /> should match snapshot 1`] = `
         <button
           className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
           disabled={false}
+          index={5}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label-138"
+          >
+            
+          </span>
+          <span
+            className="MuiTouchRipple-root-166"
+          />
+        </button>
+      </div>
+      <div
+        className="MuiGrid-container-2 MuiGrid-justify-xs-center-19"
+      >
+        <button
+          className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
+          disabled={false}
+          index={6}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label-138"
+          >
+            
+          </span>
+          <span
+            className="MuiTouchRipple-root-166"
+          />
+        </button>
+        <button
+          className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
+          disabled={false}
+          index={7}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label-138"
+          >
+            
+          </span>
+          <span
+            className="MuiTouchRipple-root-166"
+          />
+        </button>
+        <button
+          className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-outlined-145 Square-cell-136"
+          disabled={false}
+          index={8}
           onBlur={[Function]}
           onClick={[Function]}
           onContextMenu={[Function]}
